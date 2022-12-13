@@ -41,7 +41,7 @@ public:
       int newCarNumOfSeats, string newCarTransmission);
 
   /**
-   * getter functions
+   * accessor functions
    */
   string getMake() const;
   string getModel() const;
