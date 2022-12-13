@@ -34,7 +34,7 @@ int Car::getNumOfSeats() const { return numOfSeats; }
 
 string Car::getTansmission() const { return transmission; }
 
-void Car::setMake(string newMake) { make = transmission; }
+void Car::setMake(string newMake) { make = newMake; }
 
 void Car::setModel(string newModel) { model = newModel; }
 
