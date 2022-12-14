@@ -42,6 +42,4 @@ void Car::setPrice(float newPrice) { price = newPrice; }
 
 void Car::setNumOfSeats(int newNumOfSeats) { numOfSeats = newNumOfSeats; }
 
-void Car::setTansmission(string newTansmission) {
-  transmission = newTansmission;
-}
+void Car::setTansmission(string newTansmission) {transmission = newTansmission;}
