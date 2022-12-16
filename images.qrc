@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="src">
+    <file>img/Audi.png</file>
+    <file>img/BMW.png</file>
+    <file>img/insignia.png</file>
+    <file>img/logo.png</file>
+    <file>img/Mercedes.png</file>
+    <file>img/Rolls_Royce.png</file>
+    <file>img/VW.png</file>
+  </qresource>
+</RCC>
