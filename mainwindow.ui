@@ -39,7 +39,7 @@
        <number>3</number>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="Screen1">
        <widget class="QLabel" name="label">
@@ -231,7 +231,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-195</y>
+               <y>0</y>
                <width>825</width>
                <height>979</height>
               </rect>
@@ -526,10 +526,10 @@ Price : R999.00/Day</string>
        <widget class="QLabel" name="label_18">
         <property name="geometry">
          <rect>
-          <x>210</x>
-          <y>130</y>
-          <width>481</width>
-          <height>20</height>
+          <x>190</x>
+          <y>119</y>
+          <width>511</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="font">
