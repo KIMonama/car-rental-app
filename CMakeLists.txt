@@ -15,6 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
     car.cpp
     car.h
+    images.qrc
     main.cpp
     mainwindow.cpp
     mainwindow.h
