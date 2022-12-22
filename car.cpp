@@ -19,27 +19,30 @@
 
 #include "car.h"
 
-Car::Car(string newCarMake, string newCarModel, float newCarPrice,
-         int newCarNumOfSeats, string newCarTransmission)
+Car::Car(QString newCarMake, QString newCarModel, float newCarPrice,
+         int newCarNumOfSeats, QString newCarTransmission)
     : make(newCarMake), model(newCarModel), price(newCarPrice),
       numOfSeats(newCarNumOfSeats), transmission(newCarTransmission) {}
+Car ::Car(){};
+QString Car::getMake() const { return make; }
 
-string Car::getMake() const { return make; }
-
-string Car::getModel() const { return model; }
+QString Car::getModel() const { return model; }
 
 float Car::getPrice() const { return price; }
 
 int Car::getNumOfSeats() const { return numOfSeats; }
 
-string Car::getTansmission() const { return transmission; }
+QString Car::getTansmission() const { return transmission; }
 
-void Car::setMake(string newMake) { make = newMake; }
+void Car::setMake(QString newMake) { make = newMake; }
 
-void Car::setModel(string newModel) { model = newModel; }
+void Car::setModel(QString newModel) { model = newModel; }
 
 void Car::setPrice(float newPrice) { price = newPrice; }
 
 void Car::setNumOfSeats(int newNumOfSeats) { numOfSeats = newNumOfSeats; }
 
-void Car::setTansmission(string newTansmission) {transmission = newTansmission;}
+void Car::setTansmission(QString newTansmission) {transmission = newTansmission;}
+
+float Car :: getTotalPrice(int days){return price*days;}
+

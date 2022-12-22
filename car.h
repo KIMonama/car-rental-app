@@ -19,7 +19,8 @@
 
 #ifndef CAR_H
 #define CAR_H
-#include <string>
+#include <QString>
+#include <QDate>
 using namespace std;
 
 /**
@@ -27,36 +28,40 @@ using namespace std;
  */
 class Car {
 private:
-  string make;
-  string model;
+  QString make;
+  QString model;
   float price;
   int numOfSeats;
-  string transmission;
+  QString transmission;
 
 public:
   /**
    * @brief constructor
    */
-  Car(string newCarMake, string newCarModel, float newCarPrice,
-      int newCarNumOfSeats, string newCarTransmission);
+  Car(QString newCarMake, QString newCarModel, float newCarPrice,
+      int newCarNumOfSeats, QString newCarTransmission);
+  Car();
 
   /**
    * accessor functions
    */
-  string getMake() const;
-  string getModel() const;
+  QString getMake() const;
+  QString getModel() const;
   float getPrice() const;
   int getNumOfSeats() const;
-  string getTansmission() const;
+  QString getTansmission() const;
 
   /**
    * mutator functions
    */
-  void setMake(string newMake);
-  void setModel(string newModel);
+  void setMake(QString newMake);
+  void setModel(QString newModel);
   void setPrice(float newPrice);
   void setNumOfSeats(int newNumOfSeats);
-  void setTansmission(string newTansmission);
+  void setTansmission(QString newTansmission);
+
+  //other funtions
+  float getTotalPrice(int days);
 };
 
 #endif // CAR_H

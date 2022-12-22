@@ -21,6 +21,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QDate>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -34,6 +35,8 @@ class MainWindow : public QMainWindow {
 public:
   MainWindow(QWidget *parent = nullptr);
   ~MainWindow();
+  QString random();
+  int calcNumDays(const QDate &startDate, const QDate &endDate);
 
 private slots:
   void on_BeginButton_clicked();
@@ -41,6 +44,9 @@ private slots:
   void on_pushButton_clicked();
 
   void on_pushButton_2_clicked();
+
+
+  void on_pushButton_3_clicked();
 
 private:
   Ui::MainWindow *ui;
